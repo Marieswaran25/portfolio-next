@@ -1,0 +1,19 @@
+@import '@theme/colors.module.scss';
+@import '@theme/fonts.scss';
+@import '@theme/viewport.scss';
+@import '@theme/common.module.scss';
+@import '@theme/shadow.module.scss';
+
+.skills {
+    @include flex-model(column, center, flex-start, 1.5rem);
+    .tech-field {
+        @include flex-model(column, center, flex-start, 1.5rem);
+        h3 {
+            text-align: center;
+        }
+        .skillset {
+            @include flex-model(row, center, center, 1rem);
+            flex-wrap: wrap;
+        }
+    }
+}
