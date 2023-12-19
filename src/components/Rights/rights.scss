@@ -1,0 +1,21 @@
+@import '@theme/colors.module.scss';
+@import '@theme/fonts.scss';
+@import '@theme/viewport.scss';
+@import '@theme/common.module.scss';
+@import '@theme/shadow.module.scss';
+
+.rights {
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.796);
+    @include flex-model(column, center, center, 5px);
+    span {
+        font-size: smaller;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+        @include flex-model(row, center, center, 5px);
+        a {
+            text-decoration: underline;
+        }
+    }
+}

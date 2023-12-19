@@ -10,6 +10,7 @@ import { ProfileDatatype } from '@utils/profile';
 import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Social } from '@components/Social';
 
 export const Profile: React.FC<ProfileDatatype> = ({ profileImages, socialPlatformData, headerContentData }) => {
     const { title, description, downloadResume, contact } = { ...headerContentData };
@@ -17,13 +18,7 @@ export const Profile: React.FC<ProfileDatatype> = ({ profileImages, socialPlatfo
         <View className="profile-header" element={'header'}>
             <div className="profile-header-left">
                 <Image src={profileImages[0]} alt="profile-image" id="profile-image" />
-                <div className="social-platform">
-                    {Object.values(socialPlatformData).map((platform, index) => (
-                        <Link href={platform.link} key={index} target="_blank" prefetch>
-                            {platform.icon}
-                        </Link>
-                    ))}
-                </div>
+                <Social />
             </div>
             <div className="profile-header-right">
                 <div className="header-block">

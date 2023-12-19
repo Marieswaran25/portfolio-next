@@ -1,0 +1,15 @@
+@import '@theme/colors.module.scss';
+@import '@theme/fonts.scss';
+@import '@theme/viewport.scss';
+@import '@theme/common.module.scss';
+@import '@theme/shadow.module.scss';
+
+.projects {
+    @include flex-model(column, flex-start, center, 1rem);
+    &.view-wrapper {
+        padding: 2rem 0.3rem !important;
+    }
+    h2 {
+        margin-left: 1.2rem;
+    }
+}

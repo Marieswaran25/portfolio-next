@@ -21,13 +21,6 @@
             border-radius: 3.125rem;
             box-shadow: $ShadowL;
         }
-        .social-platform {
-            @include flex-model(row, center, center, 1rem);
-            svg {
-                width: 2.5rem;
-                height: 2.5rem;
-            }
-        }
     }
     .profile-header-right {
         width: 60%;

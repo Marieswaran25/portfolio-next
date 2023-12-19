@@ -1,0 +1,13 @@
+@import '@theme/colors.module.scss';
+@import '@theme/fonts.scss';
+@import '@theme/viewport.scss';
+@import '@theme/common.module.scss';
+@import '@theme/shadow.module.scss';
+
+.social-platform {
+    @include flex-model(row, center, center, 1rem);
+    svg {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

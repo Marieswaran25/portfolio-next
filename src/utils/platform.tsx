@@ -20,15 +20,15 @@ export type SocialPlatformDataType = Record<Platform, SocialPlatform>;
 
 export const socialPlatformData: SocialPlatformDataType = {
     [Platform.GITHUB]: {
-        link: '',
+        link: 'https://github.com/Marieswaran25',
         icon: <Github />,
     },
     [Platform.LINKEDIN]: {
-        link: '',
+        link: 'https://www.linkedin.com/in/marieswaranb2501/',
         icon: <Linkedin />,
     },
     [Platform.INSTAGRAM]: {
-        link: '',
+        link: 'https://instagram.com/__maries.venkat__',
         icon: <Instagram />,
     },
 

@@ -1,4 +1,5 @@
 import { CopyKeys } from '@Customtypes/base';
+import { Organization } from '@Customtypes/organization';
 import { StepperProps } from '@Customtypes/stepper';
 import Prenetics from '@assets/images/prenetics.jpeg';
 
@@ -9,7 +10,7 @@ export const experienceData: ExperienceProps = {
         {
             organizationLogo: Prenetics,
             organizationName: 'Organization.name.1',
-            organizationLink: '',
+            organizationLink: Organization.PRENETICS,
             role: 'Organiztion.role.1',
             duration: 'Organization.duration.1',
         },
