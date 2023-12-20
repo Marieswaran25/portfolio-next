@@ -1,8 +1,7 @@
 import './typography.scss';
+import colors from '@theme/colors.module.scss';
 
 import { ElementType } from 'react';
-
-import colors from '@theme/colors.module.scss';
 
 interface TypographyProps extends React.HTMLAttributes<HTMLSpanElement> {
     /**

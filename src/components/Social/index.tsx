@@ -1,7 +1,8 @@
 import './social.scss';
+
+import * as React from 'react';
 import { socialPlatformData } from '@utils/platform';
 import Link from 'next/link';
-import * as React from 'react';
 
 export const Social: React.FunctionComponent = () => {
     return (

@@ -1,12 +1,11 @@
 import './stepper.scss';
-
-import { StepperProps } from '@Customtypes/stepper';
-import Typography from '@library/Typography';
-import { _get } from '@function/getCopyKey';
 import colors from '@theme/colors.module.scss';
-import ChevronRight from '@assets/images/triangle.svg';
 
 import * as React from 'react';
+import ChevronRight from '@assets/images/triangle.svg';
+import { StepperProps } from '@Customtypes/stepper';
+import { _get } from '@function/getCopyKey';
+import Typography from '@library/Typography';
 import Image from 'next/image';
 import Link from 'next/link';
 

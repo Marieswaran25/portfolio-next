@@ -1,23 +1,26 @@
 import './profile.scss';
-
-import { View } from '@library/View';
-import Typography from '@library/Typography';
-import { _get } from '@function/getCopyKey';
-import { Button } from '@library/Button';
 import colors from '@theme/colors.module.scss';
-import { ProfileDatatype } from '@utils/profile';
 
 import * as React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import { Social } from '@components/Social';
+import { ANCHOR_ID } from '@Customtypes/routes';
+import { appendString } from '@function/appendString';
+import { _get } from '@function/getCopyKey';
+import { Button } from '@library/Button';
+import Typography from '@library/Typography';
+import { View } from '@library/View';
+import { ProfileDatatype } from '@utils/profile';
+import Image from 'next/image';
+import Link from 'next/link';
 
-export const Profile: React.FC<ProfileDatatype> = ({ profileImages, socialPlatformData, headerContentData }) => {
+export const Profile: React.FC<ProfileDatatype> = ({ profileImages, headerContentData }) => {
     const { title, description, downloadResume, contact } = { ...headerContentData };
     return (
-        <View className="profile-header" element={'header'}>
+        <View className="profile-header" element={'header' }id='about'>
+            <Typography type={'h2'} weight={'semibold'} text={_get('profile.header')} color={colors.Black16} as={'h2'} style={{display:'none'}} />
+            <div className="about">
             <div className="profile-header-left">
-                <Image src={profileImages[0]} alt="profile-image" id="profile-image" />
+                <Image src={profileImages[1]} alt="profile-image" id="profile-image" />
                 <Social />
             </div>
             <div className="profile-header-right">
@@ -27,10 +30,13 @@ export const Profile: React.FC<ProfileDatatype> = ({ profileImages, socialPlatfo
                 </div>
                 <div className="header-resume-block">
                     <Link href={'/docs/Marieswaran-Resume.pdf'} target="_blank">
-                        <Button additionalsize="large" label={<Typography type={'caption'} weight={'semibold'} text={_get(downloadResume)} color={colors.Black16} />} backgroundColor={colors.Violet} />
+                        <Button additionalsize="large" label={<Typography type={'p3'} weight={'semibold'} text={_get(downloadResume)} color={colors.White} />} backgroundColor={colors.Violet} />
                     </Link>
-                    <Button additionalsize="large" backgroundColor={colors.WS9} label={<Typography type="caption" weight="semibold" text={_get(contact)} color={colors.Black16} />} />
+                    <Link href={appendString(ANCHOR_ID.CONTACT,'#','start')}>
+                    <Button additionalsize="large" backgroundColor={colors.WS9} label={<Typography type="p3" weight="semibold" text={_get(contact)} color={colors.Black16} />} />
+                    </Link>
                 </div>
+            </div>
             </div>
         </View>
     );

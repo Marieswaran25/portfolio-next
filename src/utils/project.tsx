@@ -1,7 +1,7 @@
-import { CopyKeys } from '@Customtypes/base';
-import { Organization, Projects } from '@Customtypes/organization';
 import CircleDna from '@assets/images/circledna.png';
 import ProjectSreen from '@assets/images/projectscreen.jpg';
+import { CopyKeys } from '@Customtypes/base';
+import { Organization, Projects } from '@Customtypes/organization';
 import { StaticImageData } from 'next/image';
 
 export interface ProjectFieldDataType {

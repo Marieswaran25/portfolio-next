@@ -1,13 +1,13 @@
-import { TestimonialDataType } from '@utils/testimonials';
 import './testimonialCard.scss';
-import Image from 'next/image';
 import colors from '@theme/colors.module.scss';
 import gradients from '@theme/gradient.module.scss';
-import Linkedin from '@assets/images/linkedin.svg';
 
 import * as React from 'react';
+import Linkedin from '@assets/images/linkedin.svg';
 import { _get } from '@function/getCopyKey';
 import Typography from '@library/Typography';
+import { TestimonialDataType } from '@utils/testimonials';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const TestimonialCard: React.FunctionComponent<TestimonialDataType> = ({ linkedinLink, testimonialName, image, content, role }) => {

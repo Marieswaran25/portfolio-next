@@ -1,6 +1,6 @@
+import Kirushan from '@assets/images/kirushan.jpg';
 import { CopyKeys } from '@Customtypes/base';
 import { StaticImageData } from 'next/image';
-import Kirushan from '@assets/images/kirushan.jpg';
 
 enum Testimonial {
     KIRUSHAN = 'Kirushan',

@@ -1,6 +1,7 @@
-import React from 'react';
 import './spinner.scss';
 import colors from '@theme/colors.module.scss';
+
+import React from 'react';
 
 interface SpinnerProps extends React.HTMLAttributes<HTMLDivElement> {
     loadingColor?: string;

@@ -1,16 +1,16 @@
-import { CopyKeys } from '@Customtypes/base';
-import HTML from '@assets/images/html.svg';
-import Css from '@assets/images/css.svg';
-import JavaSript from '@assets/images/javascript.svg';
-import TypeScript from '@assets/images/typescript.svg';
-import Nextjs from '@assets/images/nextjs.svg';
-import Sass from '@assets/images/sass.svg';
-import Bootstrap from '@assets/images/bootstrap.svg';
-import Nodejs from '@assets/images/nodejs.svg';
 import Api from '@assets/images/api.svg';
+import Bootstrap from '@assets/images/bootstrap.svg';
+import Css from '@assets/images/css.svg';
+import Express from '@assets/images/express.svg';
+import HTML from '@assets/images/html.svg';
+import JavaSript from '@assets/images/javascript.svg';
+import Nextjs from '@assets/images/nextjs.svg';
+import Nodejs from '@assets/images/nodejs.svg';
 import Postgresql from '@assets/images/postgresql.svg';
 import React from '@assets/images/react.svg';
-import Express from '@assets/images/express.svg';
+import Sass from '@assets/images/sass.svg';
+import TypeScript from '@assets/images/typescript.svg';
+import { CopyKeys } from '@Customtypes/base';
 
 export interface Technology {
     field: CopyKeys;

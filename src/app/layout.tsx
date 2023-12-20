@@ -1,6 +1,8 @@
-import type { Metadata } from 'next';
 import './globals.scss';
+
+import { NavBar } from '@components/NavBar';
 import { Rights } from '@components/Rights';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: "Marieswaran's Portfolio",
@@ -12,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="en">
             <body>
+                <NavBar/>
                 {children}
                 <Rights />
             </body>

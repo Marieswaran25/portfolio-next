@@ -1,5 +1,5 @@
-import Gmail from '@assets/images/gmail.svg';
 import Github from '@assets/images/github.svg';
+import Gmail from '@assets/images/gmail.svg';
 import Instagram from '@assets/images/instagram.svg';
 import Linkedin from '@assets/images/linkedin.svg';
 

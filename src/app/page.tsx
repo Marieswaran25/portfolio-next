@@ -1,11 +1,12 @@
-import { Profile } from '@components/Profile';
 import './globals.scss';
-import { PortfolioData } from '@utils/index';
-import { Experience } from '@components/Experience';
-import { Skills } from '@components/Skills';
-import { Projects } from '@components/Projects';
-import { Testimonials } from '@components/Testimonials';
+
 import { Contact } from '@components/Contact';
+import { Experience } from '@components/Experience';
+import { Profile } from '@components/Profile';
+import { Projects } from '@components/Projects';
+import { Skills } from '@components/Skills';
+import { Testimonials } from '@components/Testimonials';
+import { PortfolioData } from '@utils/index';
 
 export default function HomePage() {
     const { profileData, experienceData, skillsData, projectFieldData, TestimonialData } = { ...PortfolioData };

@@ -5,9 +5,14 @@
 @import '@theme/shadow.module.scss';
 
 .profile-header {
-    @include flex-model-nogap(row, center, space-around);
+    @include flex-model-nogap(column, flex-start, flex-start);
+    padding: 1rem;
+.about{
+    margin-top: 2rem;
+    @include flex-model-nogap(row, center, space-between);
     @include tablet {
-        @include flex-model(column, center, flex-start, 1.5rem);
+        margin-top: 1.5rem;
+        @include flex-model(column, flex-start, flex-start,1.5rem);
     }
     .profile-header-left {
         width: 30%;
@@ -20,6 +25,15 @@
             height: auto;
             border-radius: 3.125rem;
             box-shadow: $ShadowL;
+            @include mobile{
+                max-width: 270px;
+                max-height:270px ;
+                width: 100%;
+                height: auto;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 5px solid white;
+            }
         }
     }
     .profile-header-right {
@@ -30,6 +44,11 @@
         }
         .header-block {
             @include flex-model(column, flex-start, center, 0.6rem);
+            h1{
+                @include mobile{
+                    font-size: 1.7rem;
+                }
+            }
         }
         .header-resume-block {
             @include flex-model(row, center, flex-start, 1rem);
@@ -52,4 +71,5 @@
             }
         }
     }
+}
 }

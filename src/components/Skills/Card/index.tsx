@@ -1,10 +1,10 @@
 import './card.scss';
-
-import { CopyKeys } from '@Customtypes/base';
-import Typography from '@library/Typography';
-import { _get } from '@function/getCopyKey';
 import colors from '@theme/colors.module.scss';
+
 import * as React from 'react';
+import { CopyKeys } from '@Customtypes/base';
+import { _get } from '@function/getCopyKey';
+import Typography from '@library/Typography';
 
 interface SkillProps {
     logo: JSX.Element;

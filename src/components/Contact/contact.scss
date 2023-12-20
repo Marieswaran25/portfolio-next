@@ -4,9 +4,8 @@
 @import '@theme/common.module.scss';
 @import '@theme/shadow.module.scss';
 
-.contact {
+
     .contact-me {
-        margin-top: 2rem;
         background-color: $B1;
         padding: 1rem;
         @include flex-model(column, center, center, 1rem);
@@ -21,4 +20,4 @@
             @include flex-model(column, center, center, 0.3rem);
         }
     }
-}
+

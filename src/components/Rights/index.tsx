@@ -1,6 +1,7 @@
-import Typography from '@library/Typography';
 import './rights.scss';
+
 import * as React from 'react';
+import Typography from '@library/Typography';
 import Link from 'next/link';
 
 export const Rights: React.FunctionComponent = () => {

@@ -1,7 +1,7 @@
+import Prenetics from '@assets/images/prenetics.jpeg';
 import { CopyKeys } from '@Customtypes/base';
 import { Organization } from '@Customtypes/organization';
 import { StepperProps } from '@Customtypes/stepper';
-import Prenetics from '@assets/images/prenetics.jpeg';
 
 export type ExperienceProps = { data: StepperProps[] } & { title: CopyKeys };
 

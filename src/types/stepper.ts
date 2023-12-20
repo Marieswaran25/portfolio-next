@@ -1,4 +1,5 @@
 import { StaticImageData } from 'next/image';
+
 import { CopyKeys } from './base';
 
 export interface StepperProps {

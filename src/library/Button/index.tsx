@@ -1,6 +1,6 @@
 import './button.scss';
-
 import colors from '@theme/colors.module.scss';
+
 import React, { Fragment } from 'react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {

@@ -1,37 +1,18 @@
 'use client';
 import './accordion.scss';
+import colors from '@theme/colors.module.scss';
 
+import * as React from 'react';
+import ChevronRight from '@assets/images/down.svg';
 import { _get } from '@function/getCopyKey';
 import Typography from '@library/Typography';
-import ChevronRight from '@assets/images/down.svg';
 import { ProjectFieldDataType } from '@utils/project';
-import colors from '@theme/colors.module.scss';
-import * as React from 'react';
 import Image from 'next/image';
+import { useToggle } from 'src/hooks/use-toggle';
 
 export const Accordion: React.FunctionComponent<{ data: ProjectFieldDataType[] }> = ({ data }) => {
-    const [isOpen, SetOpen] = React.useState<null | number>(null);
-    const dropdownref = React.useRef<HTMLDivElement>(null);
-    const toggle = (index: number) => {
-        if (isOpen === index) {
-            return SetOpen(null);
-        }
-        SetOpen(index);
-    };
-
-    React.useEffect(() => {
-        const handleOutsideClick = (e: MouseEvent) => {
-            if (dropdownref.current && !dropdownref.current.contains(e.target as HTMLDivElement)) {
-                SetOpen(null);
-            }
-        };
-        document.addEventListener('mousedown', handleOutsideClick);
-
-        return () => {
-            document.removeEventListener('mousedown', handleOutsideClick);
-        };
-    });
-
+    const {isOpen,toggle,dropdownref}=useToggle(null);
+    
     return (
         <div className="accordion" ref={dropdownref}>
             {Array.isArray(data) &&
