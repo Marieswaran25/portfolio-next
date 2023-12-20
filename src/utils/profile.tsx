@@ -1,7 +1,7 @@
 import image1 from '@assets/images/profile.jpg';
 import image2 from '@assets/images/profile2.jpg';
 import { CopyKeys } from '@Customtypes/base';
-import { socialPlatformData,SocialPlatformDataType } from '@utils/platform';
+import { socialPlatformData, SocialPlatformDataType } from '@utils/platform';
 import { StaticImageData } from 'next/image';
 
 export interface ProfileDatatype {

@@ -11,8 +11,8 @@ import Image from 'next/image';
 import { useToggle } from 'src/hooks/use-toggle';
 
 export const Accordion: React.FunctionComponent<{ data: ProjectFieldDataType[] }> = ({ data }) => {
-    const {isOpen,toggle,dropdownref}=useToggle(null);
-    
+    const { isOpen, toggle, dropdownref } = useToggle(null);
+
     return (
         <div className="accordion" ref={dropdownref}>
             {Array.isArray(data) &&

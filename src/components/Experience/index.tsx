@@ -9,7 +9,7 @@ import { ExperienceProps } from '@utils/experience';
 
 export const Experience: React.FunctionComponent<ExperienceProps> = ({ data, title }) => {
     return (
-        <View className="experience" id='experience'>
+        <View className="experience" id="experience">
             <Typography type={'h2'} weight={'semibold'} text={_get(title)} color={colors.Black16} id="experience-header" />
             <div className="experience-list" style={{ marginTop: '32px' }}>
                 {data.map((exp, index) => {

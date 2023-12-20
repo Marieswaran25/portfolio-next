@@ -7,69 +7,69 @@
 .profile-header {
     @include flex-model-nogap(column, flex-start, flex-start);
     padding: 1rem;
-.about{
-    margin-top: 2rem;
-    @include flex-model-nogap(row, center, space-between);
-    @include tablet {
-        margin-top: 1.5rem;
-        @include flex-model(column, flex-start, flex-start,1.5rem);
-    }
-    .profile-header-left {
-        width: 30%;
+    .about {
+        margin-top: 2rem;
+        @include flex-model-nogap(row, center, space-between);
         @include tablet {
-            width: 100%;
+            margin-top: 1.5rem;
+            @include flex-model(column, flex-start, flex-start, 1.5rem);
         }
-        @include flex-model(column, center, center, 1.5rem);
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 3.125rem;
-            box-shadow: $ShadowL;
-            @include mobile{
-                max-width: 270px;
-                max-height:270px ;
+        .profile-header-left {
+            width: 30%;
+            @include tablet {
+                width: 100%;
+            }
+            @include flex-model(column, center, center, 1.5rem);
+            img {
                 width: 100%;
                 height: auto;
-                border-radius: 50%;
-                object-fit: cover;
-                border: 5px solid white;
-            }
-        }
-    }
-    .profile-header-right {
-        width: 60%;
-        @include flex-model(column, flex-start, center, 2rem);
-        @include tablet {
-            width: 100%;
-        }
-        .header-block {
-            @include flex-model(column, flex-start, center, 0.6rem);
-            h1{
-                @include mobile{
-                    font-size: 1.7rem;
+                border-radius: 3.125rem;
+                box-shadow: $ShadowL;
+                @include mobile {
+                    max-width: 270px;
+                    max-height: 270px;
+                    width: 100%;
+                    height: auto;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 5px solid white;
                 }
             }
         }
-        .header-resume-block {
-            @include flex-model(row, center, flex-start, 1rem);
+        .profile-header-right {
+            width: 60%;
+            @include flex-model(column, flex-start, center, 2rem);
             @include tablet {
-                @include flex-model(column, center, center, 1.5rem);
+                width: 100%;
             }
-            @include tablet {
-                width: 100% !important;
+            .header-block {
+                @include flex-model(column, flex-start, center, 0.6rem);
+                h1 {
+                    @include mobile {
+                        font-size: 1.7rem;
+                    }
+                }
             }
-            > a,
-            button {
-                width: 15.625rem !important;
+            .header-resume-block {
+                @include flex-model(row, center, flex-start, 1rem);
+                @include tablet {
+                    @include flex-model(column, center, center, 1.5rem);
+                }
                 @include tablet {
                     width: 100% !important;
                 }
-
+                > a,
                 button {
-                    width: 100%;
+                    width: 15.625rem !important;
+                    @include tablet {
+                        width: 100% !important;
+                    }
+
+                    button {
+                        width: 100%;
+                    }
                 }
             }
         }
     }
-}
 }

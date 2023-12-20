@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-export function useToggle(initialstate:null|number){
+export function useToggle(initialstate: null | number) {
     const [isOpen, SetOpen] = React.useState<null | number>(initialstate);
     const dropdownref = React.useRef<HTMLDivElement>(null);
     const toggle = (index: number) => {
@@ -23,5 +23,5 @@ export function useToggle(initialstate:null|number){
         };
     });
 
-    return {isOpen,toggle,dropdownref}
+    return { isOpen, toggle, dropdownref };
 }

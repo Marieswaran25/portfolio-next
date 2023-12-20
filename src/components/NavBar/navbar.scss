@@ -4,88 +4,85 @@
 @import '@theme/common.module.scss';
 @import '@theme/shadow.module.scss';
 
+nav {
+    // background-color: $T1;
+    // @include tablet{
+    //     background-color: transparent;
+    // }
 
-nav{
-        // background-color: $T1;
-        // @include tablet{
-        //     background-color: transparent;
-        // }
-    
-.navbar{
-    @include tablet{
-        display: none;
-    }
-    width: 100%;
-    padding: 1.25rem !important
-    ;
-    @include flex-model(row,center,space-around,1rem);
-    .info{
-        width: 40%;
-        h1{
-            font-size: 1rem;
-            letter-spacing: 1.5px;
+    .navbar {
+        @include tablet {
+            display: none;
         }
-    }
-    .routes{
-        width: 50%;
-        @include flex-model(row,center,flex-end,1rem);
-        h4{
-            font-size: 0.9rem;
-            padding: 0.5rem;
-            &:hover{
-                color: $LightCeruleanBlue;
-                border-bottom: 4px solid $LightCeruleanBlue;                
+        width: 100%;
+        padding: 1.25rem !important
+    ;
+        @include flex-model(row, center, space-around, 1rem);
+        .info {
+            width: 40%;
+            h1 {
+                font-size: 1rem;
+                letter-spacing: 1.5px;
+            }
+        }
+        .routes {
+            width: 50%;
+            @include flex-model(row, center, flex-end, 1rem);
+            h4 {
+                font-size: 0.9rem;
+                padding: 0.5rem;
+                &:hover {
+                    color: $LightCeruleanBlue;
+                    border-bottom: 4px solid $LightCeruleanBlue;
+                }
             }
         }
     }
 }
-}
 
 // Navbar mobile
-.navbar-mobile{
+.navbar-mobile {
     display: none;
-    @include tablet{
-        @include flex-model-nogap(column,flex-start,space-around);
+    @include tablet {
+        @include flex-model-nogap(column, flex-start, space-around);
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
     // width: 100%;
-    .info{
-      
-        @include flex-model(row,center,space-between,1rem);
+    .info {
+        @include flex-model(row, center, space-between, 1rem);
         width: 100%;
-        h1{
+        h1 {
             font-size: 1rem;
             letter-spacing: 1.5px;
         }
-        svg{
+        svg {
             width: 25px;
             height: 25px;
         }
     }
-    .routes{
+    .routes {
         max-height: 0;
         overflow: hidden;
-        transition: all 0.5s cubic-bezier(0,1,0,1);
+        transition: all 0.5s cubic-bezier(0, 1, 0, 1);
         width: 100%;
         background-color: $B1;
 
-        @include flex-model(column,flex-start,flex-start,1.2rem);
-        &.show{
+        @include flex-model(column, flex-start, flex-start, 1.2rem);
+        &.show {
             height: auto;
             max-height: 9999px;
-            transition: all 0.5s cubic-bezier(1,0,1,0);
+            transition: all 0.5s cubic-bezier(1, 0, 1, 0);
         }
-        a{
+        a {
             width: 100%;
             padding: 0.5rem;
         }
-        h4{
+        h4 {
             font-size: 0.9rem;
             margin-left: 10px;
-            &:hover{
+            &:hover {
                 color: $LightCeruleanBlue;
-
             }
         }
     }

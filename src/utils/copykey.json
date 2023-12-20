@@ -66,12 +66,12 @@
     "footer.email": "Write an email to",
     "footer.follow": "Also Follow me on",
     "footer.phone": "Ping me a Call / Message",
-    "nav.about":"About",
-    "nav.experience":"Experience",
-    "nav.project":"Projects",
-    "nav.contact":"Contact",
-    "nav.skills":"Skills",
-    "nav.testimonials":"Testimonials",
-    "nav.header":"Maries's Portfolio",
-    "profile.header":"About"
+    "nav.about": "About",
+    "nav.experience": "Experience",
+    "nav.project": "Projects",
+    "nav.contact": "Contact",
+    "nav.skills": "Skills",
+    "nav.testimonials": "Testimonials",
+    "nav.header": "Maries's Portfolio",
+    "profile.header": "About"
 }
