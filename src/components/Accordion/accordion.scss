@@ -5,7 +5,7 @@
 @import '@theme/shadow.module.scss';
 
 .accordion {
-    @include flex-model(column, center, center, 1rem);
+    @include flex-model(column, center, center, 2rem);
     padding: 0.7rem;
     .item {
         width: 50%;
@@ -45,7 +45,6 @@
 .content {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3s cubic-bezier(0, 1, 0, 1);
     .accordion {
         gap: 1.5rem;
         .item {
@@ -57,7 +56,6 @@
     &.show {
         height: auto;
         max-height: 9999px;
-        transition: all 0.3s cubic-bezier(1, 0, 1, 0);
     }
 }
 .title {

@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix":"next lint --fix",
+    "lint:fix": "next lint --fix",
     "format:fix": "prettier --write \"{src,scripts,__tests__,.}/**/*.{ts,tsx,scss}\" \"**/*.js\" \"**/*.ts\" \"**/*.json\" \"README.md\" "
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.1",
+    "@vercel/speed-insights": "^1.0.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "next": "14.0.4",
     "react": "^18",

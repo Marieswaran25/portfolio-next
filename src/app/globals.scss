@@ -19,6 +19,9 @@ body {
     background-color: $B0;
     --scroll-behavior: smooth;
     scroll-behavior: smooth;
+    -webkit-tap-highlight-color:transparent;
+    -moz-tap-highlight-color:transparent;
+    -o-tap-highlight-color:transparent;
 }
 
 body {
