@@ -25,7 +25,7 @@ export const Stepper: React.FunctionComponent<StepperProps> = ({ organizationLog
                 <ChevronRight />
                 <div className="stepper-right">
                     <Link href={organizationLink}>
-                        <Typography type={'h3'} weight={'semibold'} text={_get(organizationName)} color={colors.Black16} />
+                        <Typography type={'h3'} weight={'semibold'} text={_get(organizationName)} color={colors.Black16} as={'h3'} />
                     </Link>
                     <Typography type={'h4'} weight={'semibold'} text={_get(role)} color={colors.Black16} />
                     <Typography type={'p3'} weight={'light'} text={_get(duration)} color={colors.Black16} />
