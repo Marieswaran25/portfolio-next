@@ -1,5 +1,5 @@
-import Prenetics from '@assets/images/prenetics.jpeg';
 import Next99 from '@assets/images/Next99.jpg';
+import Prenetics from '@assets/images/prenetics.jpeg';
 import { CopyKeys } from '@Customtypes/base';
 import { Organization } from '@Customtypes/organization';
 import { StepperProps } from '@Customtypes/stepper';
