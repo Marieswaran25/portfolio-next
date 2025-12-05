@@ -21,7 +21,13 @@ export const experienceData: ExperienceProps = {
             organizationLink: Organization.NEXT99,
             role: 'Organiztion.role.2',
             duration: 'Organization.duration.2',
-        },
+        },{
+            organizationLogo: Next99,
+            organizationName: 'Organization.name.3',
+            organizationLink: Organization.NEXT99,
+            role: 'Organiztion.role.3',
+            duration: 'Organization.duration.3',
+        }
     ],
     title: 'experience.header.text',
 };
