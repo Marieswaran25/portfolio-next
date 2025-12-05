@@ -1,5 +1,7 @@
 import Next99 from '@assets/images/Next99.jpg';
 import Prenetics from '@assets/images/prenetics.jpeg';
+import Elatre from '@assets/images/elatre.png';
+
 import { CopyKeys } from '@Customtypes/base';
 import { Organization } from '@Customtypes/organization';
 import { StepperProps } from '@Customtypes/stepper';
@@ -22,7 +24,7 @@ export const experienceData: ExperienceProps = {
             role: 'Organiztion.role.2',
             duration: 'Organization.duration.2',
         },{
-            organizationLogo: Next99,
+            organizationLogo: Elatre,
             organizationName: 'Organization.name.3',
             organizationLink: Organization.ELATRE,
             role: 'Organiztion.role.3',
