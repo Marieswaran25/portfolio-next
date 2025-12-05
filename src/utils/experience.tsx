@@ -24,7 +24,7 @@ export const experienceData: ExperienceProps = {
         },{
             organizationLogo: Next99,
             organizationName: 'Organization.name.3',
-            organizationLink: Organization.NEXT99,
+            organizationLink: Organization.ELATRE,
             role: 'Organiztion.role.3',
             duration: 'Organization.duration.3',
         }
