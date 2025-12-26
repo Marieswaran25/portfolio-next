@@ -19,7 +19,7 @@ export default function HomePage() {
             <Testimonials data={TestimonialData} />
             <Contact />
             <iframe
-        src="http://13.205.40.104/"
+        src="https://form.elatrus.com/"
         width="40%"
         height="1000"
         frameBorder="0"
