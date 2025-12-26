@@ -18,6 +18,14 @@ export default function HomePage() {
             <Projects data={projectFieldData} />
             <Testimonials data={TestimonialData} />
             <Contact />
+            <iframe
+        src="http://13.205.40.104/"
+        width="40%"
+        height="1000"
+        frameborder="0"
+        style="border: none"
+      >
+      </iframe>
         </main>
     );
 }
