@@ -22,8 +22,8 @@ export default function HomePage() {
         src="http://13.205.40.104/"
         width="40%"
         height="1000"
-        frameborder="0"
-        style="border: none"
+        frameBorder="0"
+        style={{border:'none'}}
       >
       </iframe>
         </main>
