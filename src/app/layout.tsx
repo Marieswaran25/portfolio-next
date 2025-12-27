@@ -23,7 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Analytics />
                 <SpeedInsights />
                  <Script           strategy="beforeInteractive">
-      const youriframeurl = "https://form.elatrus.com";
+                     {`const youriframeurl = "https://form.elatrus.com";
       console.log("youriframeurl", youriframeurl);
       function receiveMessage(event) {
         const origin = event.origin || "";
@@ -37,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         }
       }
 
-      window.addEventListener("message", receiveMessage, false);
+      window.addEventListener("message", receiveMessage, false);`}
     </Script>
             </body>
         </html>
