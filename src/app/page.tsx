@@ -7,6 +7,8 @@ import { Projects } from '@components/Projects';
 import { Skills } from '@components/Skills';
 import { Testimonials } from '@components/Testimonials';
 import { PortfolioData } from '@utils/index';
+import Script from 'next/script'
+ 
 
 export default function HomePage() {
     const { profileData, experienceData, skillsData, projectFieldData, TestimonialData } = { ...PortfolioData };
@@ -19,13 +21,30 @@ export default function HomePage() {
             <Testimonials data={TestimonialData} />
             <Contact />
             <iframe
-        src="https://form.elatrus.com/"
-        width="40%"
-        height="1000"
-        frameBorder="0"
-        style={{border:'none'}}
-      >
-      </iframe>
+      id="idIframe"
+      src="https://form.elatrus.com/"
+      frameBorder="0"
+      scrolling="no"
+      width="100%"
+    >
+    </iframe>
+             <Script           strategy="beforeInteractive">
+      const youriframeurl = "https://form.elatrus.com";
+      console.log("youriframeurl", youriframeurl);
+      function receiveMessage(event) {
+        const origin = event.origin || "";
+        console.log("origin", event);
+        console.log("received message", event.data);
+        if (event.data.type === "setHeight") {
+          const iFrameID = document.getElementById("idIframe");
+          if (iFrameID) {
+            iFrameID.style.height = `${event.data.height}px`;
+          }
+        }
+      }
+
+      window.addEventListener("message", receiveMessage, false);
+    </Script>
         </main>
     );
 }
